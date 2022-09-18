@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Similar Songs</title>
+</head>
+<body>
+    <h1>Browse similar songs</h1>
+    {{ name }}
+
+    <ul id="navigation">
+    {% for item in navigation %}
+        <li><a href="{{ item[0] }}">{{ item[1] }}</a></li>
+    {% endfor %}
+    </ul>
+
+    {# a comment #}
+</body>
+</html>

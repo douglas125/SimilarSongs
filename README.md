@@ -1,5 +1,5 @@
 # SimilarSongs
-A repository and data set to find similar songs being performed in different versions and artists
+A repository and data set to find similar songs being performed by various artists in different styles
 ---
 
 Would you like to listen to multiple versions of your favorite song? This is the place to find it.
