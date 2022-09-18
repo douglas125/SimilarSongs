@@ -4,6 +4,16 @@ A repository and data set to find similar songs being performed by various artis
 
 Would you like to listen to multiple versions of your favorite song? This is the place to find it.
 
+## How to view the data
+
+Clone this repo
+Run `flask --app similarsongs run`
+
+## Developing
+
+For debug purposes, it is useful to run the server using
+  - `flask --app similarsongs --debug run`
+
 ## FAQ
 
 **What does this repo contain?**
