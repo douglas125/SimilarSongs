@@ -7,6 +7,7 @@ Would you like to listen to multiple versions of your favorite song? This is the
 ## How to view the data
 
 Clone this repo
+
 Run `flask --app similarsongs run`
 
 ## Developing
