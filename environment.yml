@@ -1,0 +1,15 @@
+name: simsong_env
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pandas
+  - matplotlib
+  - tqdm
+  - ipywidgets
+  - flask
+  - ffmpeg
+  - pip
+  - pip:
+    - pytube
