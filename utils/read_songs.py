@@ -53,3 +53,18 @@ def download_songs(file):
                     subprocess.run(cmd)
             except:
                 print(f"Problem with {row.video_id}")
+
+
+def get_local_names(file):
+    file_path = os.path.join("songs", file + ".csv")
+    os.makedirs("videos", exist_ok=True)
+    if os.path.isfile(file_path):
+        local_names = []
+        df = pd.read_csv(file_path)
+        for idx, row in df.iterrows():
+            target_file = f"{row.video_id}.mp4"
+            cropped_file = target_file.replace(".mp4", f"_{row.start}_{row.end}.mp4")
+            local_names.append(cropped_file)
+        df["local_name"] = local_names
+        return df.to_dict("records")
+    return None

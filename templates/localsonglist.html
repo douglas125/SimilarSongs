@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ songname }}</title>
+</head>
+<body>
+    <h1>Similar songs for {{ songname }}</h1>
+
+    <ul id="songlist">
+    {% for item in songlist %}
+        Singer: {{ item.singer }}; Labels: {{ item.labels }};
+        <br>
+        <video width="560" height="315" controls>
+          <source src="{{ item.local_name }}" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <br>
+    {% endfor %}
+    </ul>
+
+    {# a comment #}
+</body>
+</html>
